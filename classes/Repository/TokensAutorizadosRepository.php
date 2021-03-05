@@ -29,11 +29,10 @@ class TokensAutorizadosRepository{
 				header('HTTP/1.1 401 Unauthorized');
 			}
 			//token deu certo
-
-		}else{
-
-			echo Constantes::MSG_ERRO_TOKEN_VAZIO;
-			
+		}
+		else
+		{
+			echo Constantes::MSG_ERRO_TOKEN_VAZIO;			
 		}
 
 	}

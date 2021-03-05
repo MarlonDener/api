@@ -25,7 +25,6 @@ class JsonUtil{
 
 		try{
 		$postJson = json_decode(file_get_contents('php://input'));
-		var_dump($postJson);
 
 		}catch(Exception $exception){
 			throw new Exception($exception->getMessage());			

@@ -13,16 +13,15 @@ try {
 	//inicia a request, passando as rotas como parâmetro
 	$RequestValidator = new RequestValidator($rota);
 
-	$retorno = $RequestValidator->processarRequest();
-
-
-    } catch(Exception $exception){
+	$retorno = $RequestValidator->processarRequest();	
+    }
+    
+    catch(Exception $exception){
 
     	echo json_encode([
 
     		Constantes::TIPO => Constantes::TIPO_ERRO,
-    		Constantes::RESPOSTA => utf8_encode($exception->getMessage())
-
+    		Constantes::RESPOSTA => utf8_encode($exception->getMessage()) 
 
     	]);
 	
